@@ -13,7 +13,7 @@ const Feed = ({ prompts, handleDelete, handleEdit }) => {
     //    )}
     // </section>
 
-    <div className="flex justify-center gap-3 mt-5">
+    <div className="flex flex-wrap justify-center gap-3 mt-5">
       {prompts? prompts.map(item => (
        <PromptCard item={item} key={item._id} handleDelete={handleDelete} handleEdit={handleEdit}/> 
        ) ) : (
