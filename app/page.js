@@ -8,7 +8,7 @@ const Home = () => {
   const router = useRouter()
   useEffect(()=>{
     const getPrompts = async () => {
-      const response = await fetch('/api/prompts')
+      const response = await fetch('/api/prompts', { cache: 'no-store' })
       const data = await response.json();
       setPrompts(data)
     }
