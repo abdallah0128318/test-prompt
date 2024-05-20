@@ -1,10 +1,8 @@
 import PromptCard from "./PromptCard"
 
 const Feed = ({ prompts, handleDelete, handleEdit }) => {
- 
   return (
-
-    <div className="flex flex-wrap gap-3 mt-5">
+    <div className="">
       {prompts? prompts.map(item => (
        <PromptCard item={item} key={item._id} handleDelete={handleDelete} handleEdit={handleEdit}/> 
        ) ) : (
@@ -13,7 +11,6 @@ const Feed = ({ prompts, handleDelete, handleEdit }) => {
         </div>
        )}
     </div>
-    
   )
 }
 

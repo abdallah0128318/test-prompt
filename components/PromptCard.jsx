@@ -12,7 +12,7 @@ const PromptCard = ({ item, handleDelete, handleEdit}) => {
   }
   return (
 
-    <div className="bg-transparent border border-gray-200 rounded-lg shadow-md p-4 max-w-sm mx-auto hover:shadow-lg transition-shadow duration-300 ease-in-out">
+    <div className=" m-2 p-3 shadow-md">
       <div className="flex items-center mb-4">
         <Link
           href={`/profile?id=${item?.creator._id}`}
