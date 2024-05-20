@@ -6,7 +6,7 @@ const Edit = () => {
   const [prompt, setPrompt] = useState({});
   const [isSubmitting, setisSubmitting] = useState(false);
   const router = useRouter()
-const userId = useSearchParams().get('id')
+  const userId = useSearchParams().get('id')
   useEffect(  ()=>{
       const fetchPrompt = async ()=>{
         const res = await fetch(`/api/prompts/${userId}`);
