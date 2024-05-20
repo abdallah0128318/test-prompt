@@ -8,12 +8,12 @@ const Home = () => {
   const router = useRouter()
   useEffect(()=>{
     const getPrompts = async () => {
-      const response = await fetch('/api/prompts', { cache: 'no-store' })
+      const response = await fetch('/api/prompts')
       const data = await response.json();
       setPrompts(data)
     }
     getPrompts();
-  })
+  }, [])
 
 
   const handleEdit = (id) => {
