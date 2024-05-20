@@ -32,10 +32,8 @@ const Home = () => {
       }
   }
 
-
-
   return (
-    <section className="flex-center flex-col">
+    <section className="flex-center flex-row flex-wrap">
       <h1 className="head_text text-center">
         Discover & share
         <br className="lg:hidden" />
