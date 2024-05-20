@@ -13,7 +13,7 @@ const Home = () => {
       setPrompts(data)
     }
     getPrompts();
-  }, [])
+  })
 
 
   const handleEdit = (id) => {
