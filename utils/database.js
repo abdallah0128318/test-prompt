@@ -8,7 +8,7 @@ export const connectToDB = async ()=>{
             console.log("database is connected");
             return;
         }
-        await mongoose.connect(process.env.NEXT_PUBLIC_MONGODB_URI, {dbName: "promptopia"})
+        await mongoose.connect(process.env.MONGODB_URI, {dbName: "promptopia"})
         isConnected = true;
         console.log("DB is connected");
     } catch (error) {
